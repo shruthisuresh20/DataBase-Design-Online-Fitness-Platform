@@ -1,66 +1,68 @@
-🏋️‍♀️ Online Fitness Platform – Database Design
-📘 Project Overview
-This project focuses on designing a robust relational database schema for an online fitness platform that supports personalized workout plans, BMI tracking, subscription-based access, nutrition guidance, trainer feedback, and secure payment handling. Built as part of the MSIS 2613 course, the system translates real-world business logic into a normalized, metadata-driven database structure.
+# Online Fitness Platform – Database Design
 
-🎯 Objectives
-Design a relational schema to support personalized workouts, BMI history, and trainer sessions
+---
 
-Create support for Silver (online) and Gold (trainer-led) subscription tiers
+## Project Overview
 
-Build a secure and normalized backend structure for future app and dashboard integration
+This project focuses on designing a robust relational database for an online fitness platform that supports personalized workout plans, BMI tracking, subscription-based access, nutrition guidance, trainer feedback, and secure payment handling.
 
-Model customer referral, feedback, nutrition, and session scheduling workflows
+Built as part of the MSIS 2613 course, the system translates real-world business logic into a fully normalized, metadata-driven database structure.
 
-Ensure relational consistency, metadata alignment, and normalization best practices
+---
 
-🗂️ Database Design
-Built a schema with 15+ entities capturing core fitness workflows
+## Objectives
 
-Applied 1NF–3NF normalization to remove redundancy and anomalies
+- Design a relational schema to support personalized workouts, BMI history, and trainer sessions  
+- Create support for Silver (online) and Gold (trainer-led) subscription tiers  
+- Build a secure and normalized backend structure for future app and dashboard integration  
+- Model customer referral, feedback, nutrition, and session scheduling workflows  
+- Ensure relational consistency, metadata alignment, and normalization best practices  
 
-Designed an EER model with disjoint roles (Trainer vs Customer), junction tables, and unary/self-joins
+---
 
-Introduced metadata-driven structures with clear keys, attributes, and table-level integrity
+## Database Design
 
-📌 Entity Highlights
-Login, Customer, Trainer: Secure login & role separation
+The backend schema includes over 15 normalized entities capturing the platform’s core functionalities. The design is built to scale and integrates features such as referrals, plan-based clustering, and secure access roles.
 
-WorkoutPlan, ExercisePlan, Session, Exercises: Workout customization logic
+---
 
-BMI: Historical health tracking
+## Entity Highlights
 
-Payment, Membership, Referral: Subscription billing and discount system
+- `Login`, `Customer`, `Trainer`: Role-based identity management  
+- `WorkoutPlan`, `ExercisePlan`, `Session`, `Exercises`: Workout logic  
+- `BMI`: Health tracking and progress logging  
+- `Payment`, `Membership`, `Referral`: Subscription management  
+- `Feedback`, `Feedback_Trainer_Association`: Customer feedback and trainer ratings  
+- `NutritionPlan`: Tailored dietary structure  
 
-Feedback, Feedback_Trainer_Association: Feedback system with trainer performance tracking
+---
 
-NutritionPlan: Assigned per plan for personalized meal suggestions
+## Tools Used
 
-🛠️ Tools Used
-Lucidchart – EER modeling
+- **Lucidchart** – Schema modeling  
+- **MySQL** – Database design and implementation  
+- **SQL** – Query development  
+- **Markdown** – Documentation formatting  
 
-MySQL – Schema implementation & queries
+---
 
-SQL – Data definition and testing
+## Learning Outcomes
 
-Markdown – Documentation formatting
+- Applied 1NF–3NF normalization to resolve redundancy and anomalies  
+- Translated business requirements into scalable relational models  
+- Tackled challenges in role separation, feedback modeling, and referral mapping  
+- Created metadata-driven table structures to optimize schema flexibility and integrity  
+- Built a secure backend structure supporting future integration with dashboards and apps  
 
-📚 Learning Outcomes
-Translated real-world fitness business logic into a normalized relational schema
+---
 
-Practiced data modeling techniques including cardinality, role separation, and associative entities
+## Files Included
 
-Applied 1NF–3NF principles to ensure clean structure and optimized queries
+- `schema.sql` – DDL queries for table creation  
+- `sample_queries.sql` – Example insights: top trainers, referral bonuses, BMI reports  
+- `lucidchart_eer_diagram.png` – Visual diagram of schema (if available)  
+- `README.md` – Complete documentation of the project  
 
-Incorporated design features like foreign keys, safe update modes, and data security scaffolding
+---
 
-Explored clustering strategies based on subscription type (offline sessions vs online-only content)
-
-📎 Files Included
-schema.sql – Table creation scripts
-
-sample_queries.sql – Example insights (e.g., top-rated trainers, referrals, BMI reports)
-
-lucidchart_eer_diagram.png – Full schema visual (if applicable)
-
-README.md – Project documentation
 
