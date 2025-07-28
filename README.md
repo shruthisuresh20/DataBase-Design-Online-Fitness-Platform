@@ -53,6 +53,7 @@ The backend schema includes over 15 normalized entities capturing the platformâ€
 - Tackled challenges in role separation, feedback modeling, and referral mapping  
 - Created metadata-driven table structures to optimize schema flexibility and integrity  
 - Built a secure backend structure supporting future integration with dashboards and apps  
+<img width="750" height="633" alt="image" src="https://github.com/user-attachments/assets/e42e5919-5ddb-49a8-9daa-4e4d97c95ba8" />
 
 ---
 
