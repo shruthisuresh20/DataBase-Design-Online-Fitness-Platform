@@ -48,7 +48,7 @@ The backend schema includes over 15 normalized entities capturing the platformâ€
 
 ## ðŸ§© Enhanced Entity-Relationship (EER) Model
 
-The EER model designed for this project showcases a complex yet well-organized fitness platform schema. It captures real-world relationships and system logic through:
+The EER model designed for this project showcases a complex yet well-organized fitness platform schema. It captures real-world relationships and system logic 
 <img width="450" height="500" alt="image" src="https://github.com/user-attachments/assets/700c1f96-1301-483b-8c7c-c132b8aaf591" />
 
 - **Disjoint Role Specialization**: `Login` is the parent entity with a `type` attribute to distinguish between `Customer` and `Trainer`. This allows for secure role-based access and system logic separation.
